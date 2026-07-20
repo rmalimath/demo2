@@ -21,4 +21,4 @@ jobs:
           java-version: "17"
           chache: "maven"
       - name: Build with Maven
-        run: mvn clean install
+        run: ./mvnw clean package
