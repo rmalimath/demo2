@@ -19,6 +19,10 @@ jobs:
         with:
           distribution: "temurin"
           java-version: "17"
-          chache: "maven"
+          cache: "maven"
+
+      - name: Make Maven wrapper executable
+        run: chmod +x ./mvnw
+
       - name: Build with Maven
         run: ./mvnw clean package
